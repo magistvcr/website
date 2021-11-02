@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.logo{
+    padding: 5px 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.menu a{
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+}
+
+.menu a:hover{
+    background-color: darkgreen;
+}
+
+.cabecera{
+    box-shadow: 2px 3px 6px #ccc;
+}
+
+/* media queries*/
+@media (min-width:768px){
+    .cabecera{
+        display: flex;
+    }
+    
+    .logo{
+        width: 40%;
+    }
+    .menu{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center
+    }
+    
+    .menu a{
+        background-color: #fff;
+        color: #000;
+        border-bottom: none;
+        flex: 1;
+    }
+}
+
+/* Seccion 1*/
+
+.seccion1{
+    background-image: url(../images/fondo1.jpg);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1 h1{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 3px 0 #fff;
+}
+
+@media (min-width: 768px){
+    .seccion1 h1{
+        font-size: 50px;
+    }
+}
+
+/* Seccion 2*/
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.separar{
+    margin: 60px 0;
+}
+
+.titulo{
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px){
+    
+    .seccion2{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .seccion2 img{
+        flex-basis: calc(50% - 10px);
+        width: 580px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px #000;
+    }
+    
+    .contenido{
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Seccion 3 */
+
+.patio{
+    background-image: linear-gradient(rgba(23, 41, 21, 0.6),rgba(23,86,0,6)), url(../images/patio.jpg);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.seccion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.seccion3 p{
+    font-size: 20px;
+    font-family: "lato", sans-serif;
+}
+
+@media (width-min: 768px){
+    .seccion3 p{
+        font-size: 48px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
